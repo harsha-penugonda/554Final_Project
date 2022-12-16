@@ -1,8 +1,10 @@
 const express = require("express");
 const router = express.Router();
 const data = require("../data");
-const redis = require("redis");
-const client = redis.createClient();
+// const redis = require("redis");
+// const client = redis.createClient({
+//   process
+// });
 const authorizeuser = require("./authorize");
 const propertiesData = data.properties;
 const imageData = data.images;
