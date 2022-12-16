@@ -53,6 +53,7 @@ app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "client/build", "index.html"));
 });
 
-http.listen(process.env.PORT || 4000, () => {
+const port = process.env.PORT || 4000;
+http.listen(port, () => {
   console.log("Listening on port 4000");
 });
